@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "Steam to Speedrun.com Checker",
+  "version": "1.0",
+  "description": "Check if a game exists on speedrun.com when viewing a Steam game page.",
+  "permissions": ["tabs", "scripting", "storage", "activeTab"],
+  "action": {
+    "default_icon": {
+      "16": "icon16.png",
+      "48": "icon48.png",
+      "128": "icon128.png"
+    }
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "host_permissions": [
+    "https://store.steampowered.com/*",
+    "https://www.speedrun.com/*"
+  ],
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  }
+}
